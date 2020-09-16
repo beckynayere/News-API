@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&family=Supermercado+One&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+.articles{
+    display: grid;
+    grid-template-columns:auto auto;
+    border: 2px solid #525b76;
+    padding: 5%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.article{
+    width: 500px;
+    padding: 5%;
+    margin: 2%;
+    border: 1px solid#525b76;
+}
+
+.title{
+    font-family: 'Supermercado One', cursive;
+    font-size: larger;
+    text-align: center;
+    color: #525b76;
+}
+
+.tagline{
+    font-family: 'Supermercado One', cursive;
+    font-size: 16px;
+    color: #525b76;
+}
+
+nav{
+    height: 20vh;
+    margin-bottom: 2%;
+    padding: 2%;
+    background-color: #CBF7ED;
+}
+
+.sourcetitle{
+    font-size: 36px;
+    color :white
+}
+
+.footer{
+    background-color: #CBF7ED;
+    padding: 5%;
+}
+
+.footer h1{
+    font-family: 'Supermercado One', cursive;
+    font-size: 56px;
+    text-align: center;
+    color: #525b76;  
+}
+
+.footer .row{
+    display: center;
+}
+.contacts p{
+    text-align: center;
+}
+
+.contacts h2{
+    font-family: 'Supermercado One', cursive;
+    font-size: 36px;
+    text-align: center;
+    color: #525b76; 
+}
