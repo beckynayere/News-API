@@ -3,6 +3,10 @@
 
 
 <head>
+    {%extends 'base.html'%}
+{% import 'macros.html' as macro%}
+
+
     {% block styles%}
     {{ super()}}
 
@@ -12,6 +16,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {%block content%}
     {% if title %}
     <title> {{ title}}</title>
 
@@ -26,10 +32,21 @@
     <h3> Found {{ tops | count }} </h3>
 {% for top in tops%}
 <h1>{{top.name}} </h1>
+
+<hr>
+<div class="footer">
+    <h1>The News Presenter</h1>
+    <div class="row">
+        <div class="contacts col-md-6">
+            <h2>Contacts</h2>
+            <p><strong>Email:</strong>nereahhopebecky@@gmail.com</p>
+            <p><strong>Telephone:</strong> +2540705877662</p>
+            <p><strong>Phone:</strong>0701964422</p>
+        </div>
 {%endfor%}
 
 
-
+{%endblock%}
 
 </body>
 
