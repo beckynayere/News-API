@@ -43,7 +43,7 @@ def search_news(topic):
     
     search_news_url = "https://newsapi.org/v2/everything?q={}&apiKey={}".format(topic, api_key)
     
-    with urllib.request.urlopen(search_news_url) as url:
+    with urllib.request.urlopen(search_news_url) as url :
         search_news_data = url.read()
         search_news_response = json.loads(search_news_data)
         
